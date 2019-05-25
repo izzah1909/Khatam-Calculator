@@ -5,8 +5,7 @@
     <title>Khatam Calculator
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-    <style>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <style>
     html {
     scroll-behavior: smooth;
     }
@@ -21,8 +20,9 @@
     background-color: #fce4ec
     }
     #paragraph {
-        font-size: 20px;
+    font-size: 20px;
     }
+
     </style>
 </head>
 
@@ -39,13 +39,15 @@
     </nav>
     <div class="center-align" id="main-section">
         <h1>Khatam Calculator</h1>
-        <p id="paragraph">This is a simple web app that helps you gauge how long it will take for you to khatam the Quran</p>
+        <p id="paragraph">This is a simple web app that helps you gauge how long it will take for you to khatam the
+            Quran</p>
         <a class="waves-effect waves-light btn-large deep-purple darken-4" href="#pages-section">By Pages</a>
         <a class="waves-effect waves-light btn-large deep-purple darken-4">By Days</a>
     </div>
     <div class="container center-align" id="pages-section">
         <h1>By Pages</h1>
-        <p id="paragraph">Find out how many days it will take to khatam by specifying how many pages you plan to read daily</p>
+        <p id="paragraph">Find out how many days it will take to khatam by specifying how many pages you plan to read
+            daily</p>
         <div class="row">
             <form class="col s12">
                 <div class="row">
@@ -57,7 +59,11 @@
                 </div>
             </form>
         </div>
-        <a class="waves-effect waves-light btn-large">Calculate</a>
+        <a class="waves-effect waves-light btn-large" onclick="calculateDaysNeeded()">Calculate</a>
+        <div class="card-panel green lighten-3">
+            <span class="white-text" id="cardContents">Your results will display here after you click the 'Calculate' button.
+            </span>
+        </div>
     </div>
     <footer class="page-footer deep-purple darken-4">
         <div class="container">
@@ -86,7 +92,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
