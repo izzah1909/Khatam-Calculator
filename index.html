@@ -35,7 +35,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#main-section">Home</a></li>
                 <li><a href="#pages-section">By Pages</a></li>
-                <li><a href="collapsible.html">By Days</a></li>
+                <li><a href="#days-section">By Days</a></li>
             </ul>
         </div>
     </nav>
@@ -44,7 +44,7 @@
         <p id="paragraph">This is a simple web app that helps you gauge how long it will take for you to khatam the
             Quran</p>
         <a class="waves-effect waves-light btn-large deep-purple darken-4" href="#pages-section">By Pages</a>
-        <a class="waves-effect waves-light btn-large deep-purple darken-4">By Days</a>
+        <a class="waves-effect waves-light btn-large deep-purple darken-4" href="#days-section">By Days</a>
     </div>
     <div class="container center-align" id="pages-section">
         <h1>By Pages</h1>
@@ -64,6 +64,26 @@
         <a class="waves-effect waves-light btn-large" onclick="calculateDaysNeeded()">Calculate</a>
         <div class="card-panel green lighten-3" id="card">
             <span class="white-text" id="cardContents">Your results will display here after you click the 'Calculate' button.
+            </span>
+        </div>
+    </div>
+    <div class="container center-align" id="days-section">
+        <h1>By Days</h1>
+        <p id="paragraph">Find out how many pages you need to read daily by specifying how many days you hope to khatam by.</p>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="days" type="number" class="validate">
+                        <label for="email">Number of days</label>
+                        <span class="helper-text">Enter the number of days you plan to khatam by.</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a class="waves-effect waves-light btn-large" onclick="calculatePagesNeeded()">Calculate</a>
+        <div class="card-panel green lighten-3" id="card">
+            <span class="white-text" id="cardContentsDays">Your results will display here after you click the 'Calculate' button.
             </span>
         </div>
     </div>

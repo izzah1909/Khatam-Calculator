@@ -28,3 +28,16 @@ function printDaysNeededToCard(daysNeeded, pagesRead) {
     document.getElementById("cardContents").innerHTML = message;
     
 }
+
+function calculatePagesNeeded() {
+    const daysEntered = parseInt (document.getElementById("days").value);
+    const pagesNeeded = 604 / daysEntered;
+    printDaysNeededToCard(daysEntered, pagesNeeded);
+    
+}
+
+function printDaysNeededToCard(daysEntered, pagesNeeded) {
+    let message = "If you want to khatam by " + daysEntered + " day(s), you will need to read " + pagesNeeded + " page(s) per day. ";
+    document.getElementById("cardContentsDays").innerHTML = message;
+ }
+    
