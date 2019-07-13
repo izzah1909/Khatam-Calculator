@@ -1,6 +1,7 @@
 
 
 function calculateDaysNeeded() {
+    console.log("hello");
     const pagesRead = parseInt (document.getElementById("pages").value);
     const daysNeeded = 604 / pagesRead;
     printDaysNeededToCard(daysNeeded, pagesRead);
@@ -8,6 +9,7 @@ function calculateDaysNeeded() {
 }
 
 function printDaysNeededToCard(daysNeeded, pagesRead) {
+    console.log(daysNeeded,pagesRead);
     let message = "If you read " + pagesRead + " page(s) a day, you will complete it in about " + daysNeeded + " day(s). ";
     if (pagesRead === 0) {
         message = "Please read the Quran...";
@@ -32,11 +34,11 @@ function printDaysNeededToCard(daysNeeded, pagesRead) {
 function calculatePagesNeeded() {
     const daysEntered = parseInt (document.getElementById("days").value);
     const pagesNeeded = 604 / daysEntered;
-    printDaysNeededToCard(daysEntered, pagesNeeded);
+    printPagesNeededToCard(daysEntered, pagesNeeded);
     
 }
 
-function printDaysNeededToCard(daysEntered, pagesNeeded) {
+function printPagesNeededToCard(daysEntered, pagesNeeded) {
     let message = "If you want to khatam by " + daysEntered + " day(s), you will need to read " + pagesNeeded + " page(s) per day. ";
     document.getElementById("cardContentsDays").innerHTML = message;
  }
